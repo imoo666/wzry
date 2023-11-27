@@ -1,0 +1,235 @@
+import { ake } from '../res/img/hero/cike/ake.ts'
+import { bailixuance } from '../res/img/hero/cike/bailixuance.ts'
+import { fei } from '../res/img/hero/cike/fei.ts'
+import { hanxin } from '../res/img/hero/cike/hanxin.ts'
+import { jing } from '../res/img/hero/cike/jing.ts'
+import { juyoujing } from '../res/img/hero/cike/juyoujing.ts'
+import { lan } from '../res/img/hero/cike/lan.ts'
+import { lanlingwang } from '../res/img/hero/cike/lanlingwang.ts'
+import { libai } from '../res/img/hero/cike/libai.ts'
+import { nakelulu } from '../res/img/hero/cike/nakelulu.ts'
+import { peiqinhu } from '../res/img/hero/cike/peiqinhu.ts'
+import { simayi } from '../res/img/hero/cike/simayi.ts'
+import { sunwukong } from '../res/img/hero/cike/sunwukong.ts'
+import { yuange } from '../res/img/hero/cike/yuange.ts'
+import { yunzhongjun } from '../res/img/hero/cike/yunzhongjun.ts'
+import { anqila } from '../res/img/hero/fashi/anqila.ts'
+import { bianque } from '../res/img/hero/fashi/bianque.ts'
+import { buzhihuowu } from '../res/img/hero/fashi/buzhihuowu.ts'
+import { change } from '../res/img/hero/fashi/change.ts'
+import { daji } from '../res/img/hero/fashi/daji.ts'
+import { diaochan } from '../res/img/hero/fashi/diaochan.ts'
+import { ganjiangmoye } from '../res/img/hero/fashi/ganjiangmoye.ts'
+import { gaojianli } from '../res/img/hero/fashi/gaojianli.ts'
+import { haiyue } from '../res/img/hero/fashi/haiyue.ts'
+import { jiangziya } from '../res/img/hero/fashi/jiangziya.ts'
+import { jinchan } from '../res/img/hero/fashi/jinchan.ts'
+import { milaidi } from '../res/img/hero/fashi/milaidi.ts'
+import { miyue } from '../res/img/hero/fashi/miyue.ts'
+import { mozi } from '../res/img/hero/fashi/mozi.ts'
+import { nüwa } from '../res/img/hero/fashi/nüwa.ts'
+import { shangguanwaner } from '../res/img/hero/fashi/shangguanwaner.ts'
+import { shenmengxi } from '../res/img/hero/fashi/shenmengxi.ts'
+import { wangzhaojun } from '../res/img/hero/fashi/wangzhaojun.ts'
+import { wuzetian } from '../res/img/hero/fashi/wuzetian.ts'
+import { xiaoqiao } from '../res/img/hero/fashi/xiaoqiao.ts'
+import { xishi } from '../res/img/hero/fashi/xishi.ts'
+import { yangyuhuan } from '../res/img/hero/fashi/yangyuhuan.ts'
+import { yingzheng } from '../res/img/hero/fashi/yingzheng.ts'
+import { yixing } from '../res/img/hero/fashi/yixing.ts'
+import { zhangliang } from '../res/img/hero/fashi/zhangliang.ts'
+import { zhenji } from '../res/img/hero/fashi/zhenji.ts'
+import { zhouyu } from '../res/img/hero/fashi/zhouyu.ts'
+import { zhugeliang } from '../res/img/hero/fashi/zhugeliang.ts'
+import { caiwenji } from '../res/img/hero/fuzhu/caiwenji.ts'
+import { daqiao } from '../res/img/hero/fuzhu/daqiao.ts'
+import { donghuangtaiyi } from '../res/img/hero/fuzhu/donghuangtaiyi.ts'
+import { dunshan } from '../res/img/hero/fuzhu/dunshan.ts'
+import { duoliya } from '../res/img/hero/fuzhu/duoliya.ts'
+import { guiguzi } from '../res/img/hero/fuzhu/guiguzi.ts'
+import { liuchan } from '../res/img/hero/fuzhu/liuchan.ts'
+import { lubandashi } from '../res/img/hero/fuzhu/lubandashi.ts'
+import { mingshiyin } from '../res/img/hero/fuzhu/mingshiyin.ts'
+import { niumo } from '../res/img/hero/fuzhu/niumo.ts'
+import { sangqi } from '../res/img/hero/fuzhu/sangqi.ts'
+import { sunbin } from '../res/img/hero/fuzhu/sunbin.ts'
+import { taiyizhenren } from '../res/img/hero/fuzhu/taiyizhenren.ts'
+import { yao } from '../res/img/hero/fuzhu/yao.ts'
+import { zhangfei } from '../res/img/hero/fuzhu/zhangfei.ts'
+import { zhongkui } from '../res/img/hero/fuzhu/zhongkui.ts'
+import { zhuangzhou } from '../res/img/hero/fuzhu/zhuangzhou.ts'
+import { ailin } from '../res/img/hero/sheshou/ailin.ts'
+import { bailishouyue } from '../res/img/hero/sheshou/bailishouyue.ts'
+import { chengjisihan } from '../res/img/hero/sheshou/chengjisihan.ts'
+import { direnjie } from '../res/img/hero/sheshou/direnjie.ts'
+import { geya } from '../res/img/hero/sheshou/geya.ts'
+import { gongsunli } from '../res/img/hero/sheshou/gongsunli.ts'
+import { houyi } from '../res/img/hero/sheshou/houyi.ts'
+import { huangzhong } from '../res/img/hero/sheshou/huangzhong.ts'
+import { jialuo } from '../res/img/hero/sheshou/jialuo.ts'
+import { laixiao } from '../res/img/hero/sheshou/laixiao.ts'
+import { liyuanfang } from '../res/img/hero/sheshou/liyuanfang.ts'
+import { lubanqihao } from '../res/img/hero/sheshou/lubanqihao.ts'
+import { makeboluo } from '../res/img/hero/sheshou/makeboluo.ts'
+import { mengya } from '../res/img/hero/sheshou/mengya.ts'
+import { sunshangxiang } from '../res/img/hero/sheshou/sunshangxiang.ts'
+import { yuji } from '../res/img/hero/sheshou/yuji.ts'
+import { aguduo } from '../res/img/hero/tanke/aguduo.ts'
+import { baiqi } from '../res/img/hero/tanke/baiqi.ts'
+import { chengyaojin } from '../res/img/hero/tanke/chengyaojin.ts'
+import { lianpo } from '../res/img/hero/tanke/lianpo.ts'
+import { liubang } from '../res/img/hero/tanke/liubang.ts'
+import { sulie } from '../res/img/hero/tanke/sulie.ts'
+import { xiahoudun } from '../res/img/hero/tanke/xiahoudun.ts'
+import { xiangyu } from '../res/img/hero/tanke/xiangyu.ts'
+import { zhubajie } from '../res/img/hero/tanke/zhubajie.ts'
+import { caocao } from '../res/img/hero/zhanshi/caocao.ts'
+import { damo } from '../res/img/hero/zhanshi/damo.ts'
+import { dianwei } from '../res/img/hero/zhanshi/dianwei.ts'
+import { gongbenwucang } from '../res/img/hero/zhanshi/gongbenwucang.ts'
+import { guanyu } from '../res/img/hero/zhanshi/guanyu.ts'
+import { huamulan } from '../res/img/hero/zhanshi/huamulan.ts'
+import { jixiaoman } from '../res/img/hero/zhanshi/jixiaoman.ts'
+import { kai } from '../res/img/hero/zhanshi/kai.ts'
+import { kuangtie } from '../res/img/hero/zhanshi/kuangtie.ts'
+import { laofuzi } from '../res/img/hero/zhanshi/laofuzi.ts'
+import { liubei } from '../res/img/hero/zhanshi/liubei.ts'
+import { lixin } from '../res/img/hero/zhanshi/lixin.ts'
+import { luna } from '../res/img/hero/zhanshi/luna.ts'
+import { lübu } from '../res/img/hero/zhanshi/lübu.ts'
+import { machao } from '../res/img/hero/zhanshi/machao.ts'
+import { mengqi } from '../res/img/hero/zhanshi/mengqi.ts'
+import { mengtian } from '../res/img/hero/zhanshi/mengtian.ts'
+import { nezha } from '../res/img/hero/zhanshi/nezha.ts'
+import { pangu } from '../res/img/hero/zhanshi/pangu.ts'
+import { sikongzhen } from '../res/img/hero/zhanshi/sikongzhen.ts'
+import { sunce } from '../res/img/hero/zhanshi/sunce.ts'
+import { xialuote } from '../res/img/hero/zhanshi/xialuote.ts'
+import { yadianna } from '../res/img/hero/zhanshi/yadianna.ts'
+import { yalian } from '../res/img/hero/zhanshi/yalian.ts'
+import { yangjian } from '../res/img/hero/zhanshi/yangjian.ts'
+import { dongfangyao } from '../res/img/hero/zhanshi/dongfangyao.ts'
+import { yase } from '../res/img/hero/zhanshi/yase.ts'
+import { yunying } from '../res/img/hero/zhanshi/yunying.ts'
+import { zhaohuaizhen } from '../res/img/hero/zhanshi/zhaohuaizhen.ts'
+import { zhaoyun } from '../res/img/hero/zhanshi/zhaoyun.ts'
+import { zhongwuyan } from '../res/img/hero/zhanshi/zhongwuyan.ts'
+
+export const ALL_HERO_LIST = [
+  { name: ake.name, src: ake.url },
+  { name: bailixuance.name, src: bailixuance.url },
+  { name: fei.name, src: fei.url },
+  { name: hanxin.name, src: hanxin.url },
+  { name: jing.name, src: jing.url },
+  { name: juyoujing.name, src: juyoujing.url },
+  { name: lan.name, src: lan.url },
+  { name: lanlingwang.name, src: lanlingwang.url },
+  { name: libai.name, src: libai.url },
+  { name: nakelulu.name, src: nakelulu.url },
+  { name: peiqinhu.name, src: peiqinhu.url },
+  { name: simayi.name, src: simayi.url },
+  { name: sunwukong.name, src: sunwukong.url },
+  { name: yuange.name, src: yuange.url },
+  { name: yunzhongjun.name, src: yunzhongjun.url },
+  { name: anqila.name, src: anqila.url },
+  { name: bianque.name, src: bianque.url },
+  { name: buzhihuowu.name, src: buzhihuowu.url },
+  { name: change.name, src: change.url },
+  { name: daji.name, src: daji.url },
+  { name: diaochan.name, src: diaochan.url },
+  { name: ganjiangmoye.name, src: ganjiangmoye.url },
+  { name: gaojianli.name, src: gaojianli.url },
+  { name: haiyue.name, src: haiyue.url },
+  { name: jiangziya.name, src: jiangziya.url },
+  { name: jinchan.name, src: jinchan.url },
+  { name: milaidi.name, src: milaidi.url },
+  { name: miyue.name, src: miyue.url },
+  { name: mozi.name, src: mozi.url },
+  { name: nüwa.name, src: nüwa.url },
+  { name: shangguanwaner.name, src: shangguanwaner.url },
+  { name: shenmengxi.name, src: shenmengxi.url },
+  { name: wangzhaojun.name, src: wangzhaojun.url },
+  { name: wuzetian.name, src: wuzetian.url },
+  { name: xiaoqiao.name, src: xiaoqiao.url },
+  { name: xishi.name, src: xishi.url },
+  { name: yangyuhuan.name, src: yangyuhuan.url },
+  { name: yingzheng.name, src: yingzheng.url },
+  { name: yixing.name, src: yixing.url },
+  { name: zhangliang.name, src: zhangliang.url },
+  { name: zhenji.name, src: zhenji.url },
+  { name: zhouyu.name, src: zhouyu.url },
+  { name: zhugeliang.name, src: zhugeliang.url },
+  { name: caiwenji.name, src: caiwenji.url },
+  { name: daqiao.name, src: daqiao.url },
+  { name: donghuangtaiyi.name, src: donghuangtaiyi.url },
+  { name: dunshan.name, src: dunshan.url },
+  { name: duoliya.name, src: duoliya.url },
+  { name: guiguzi.name, src: guiguzi.url },
+  { name: liuchan.name, src: liuchan.url },
+  { name: lubandashi.name, src: lubandashi.url },
+  { name: mingshiyin.name, src: mingshiyin.url },
+  { name: niumo.name, src: niumo.url },
+  { name: sangqi.name, src: sangqi.url },
+  { name: sunbin.name, src: sunbin.url },
+  { name: taiyizhenren.name, src: taiyizhenren.url },
+  { name: yao.name, src: yao.url },
+  { name: zhangfei.name, src: zhangfei.url },
+  { name: zhongkui.name, src: zhongkui.url },
+  { name: zhuangzhou.name, src: zhuangzhou.url },
+  { name: ailin.name, src: ailin.url },
+  { name: bailishouyue.name, src: bailishouyue.url },
+  { name: chengjisihan.name, src: chengjisihan.url },
+  { name: direnjie.name, src: direnjie.url },
+  { name: geya.name, src: geya.url },
+  { name: gongsunli.name, src: gongsunli.url },
+  { name: houyi.name, src: houyi.url },
+  { name: huangzhong.name, src: huangzhong.url },
+  { name: jialuo.name, src: jialuo.url },
+  { name: laixiao.name, src: laixiao.url },
+  { name: liyuanfang.name, src: liyuanfang.url },
+  { name: lubanqihao.name, src: lubanqihao.url },
+  { name: makeboluo.name, src: makeboluo.url },
+  { name: mengya.name, src: mengya.url },
+  { name: sunshangxiang.name, src: sunshangxiang.url },
+  { name: yuji.name, src: yuji.url },
+  { name: aguduo.name, src: aguduo.url },
+  { name: baiqi.name, src: baiqi.url },
+  { name: chengyaojin.name, src: chengyaojin.url },
+  { name: lianpo.name, src: lianpo.url },
+  { name: liubang.name, src: liubang.url },
+  { name: sulie.name, src: sulie.url },
+  { name: xiahoudun.name, src: xiahoudun.url },
+  { name: xiangyu.name, src: xiangyu.url },
+  { name: zhubajie.name, src: zhubajie.url },
+  { name: caocao.name, src: caocao.url },
+  { name: damo.name, src: damo.url },
+  { name: dianwei.name, src: dianwei.url },
+  { name: gongbenwucang.name, src: gongbenwucang.url },
+  { name: guanyu.name, src: guanyu.url },
+  { name: huamulan.name, src: huamulan.url },
+  { name: jixiaoman.name, src: jixiaoman.url },
+  { name: kai.name, src: kai.url },
+  { name: kuangtie.name, src: kuangtie.url },
+  { name: laofuzi.name, src: laofuzi.url },
+  { name: liubei.name, src: liubei.url },
+  { name: lixin.name, src: lixin.url },
+  { name: luna.name, src: luna.url },
+  { name: lübu.name, src: lübu.url },
+  { name: machao.name, src: machao.url },
+  { name: mengqi.name, src: mengqi.url },
+  { name: mengtian.name, src: mengtian.url },
+  { name: nezha.name, src: nezha.url },
+  { name: pangu.name, src: pangu.url },
+  { name: sikongzhen.name, src: sikongzhen.url },
+  { name: sunce.name, src: sunce.url },
+  { name: xialuote.name, src: xialuote.url },
+  { name: yadianna.name, src: yadianna.url },
+  { name: yalian.name, src: yalian.url },
+  { name: yangjian.name, src: yangjian.url },
+  { name: dongfangyao.name, src: dongfangyao.url },
+  { name: yase.name, src: yase.url },
+  { name: yunying.name, src: yunying.url },
+  { name: zhaohuaizhen.name, src: zhaohuaizhen.url },
+  { name: zhaoyun.name, src: zhaoyun.url },
+  { name: zhongwuyan.name, src: zhongwuyan.url }
+]

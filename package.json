@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@arco-design/web-react": "^2.56.0",
+    "pinyin-pro": "^3.18.2",
     "prettier": "^2.8.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-singlefile": "^0.13.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
