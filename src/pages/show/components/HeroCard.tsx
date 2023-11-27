@@ -6,7 +6,9 @@ import { SortTag } from './SortTag'
 export const HeroCard = ({ name, src, logo }: { name: string; src: string; logo: LogoType }) => {
   const label = useMemo(() => {
     const logoDetail = logoLevelMap[logo]
-    const local = JSON.parse(localStorage.getItem('local') || '')[logoDetail.key.slice(0, -3)]
+    const local = JSON.parse(localStorage.getItem('local') || (null as unknown as any))[
+      logoDetail.key.slice(0, -3)
+    ]
     const result = (logoDetail.key.includes('state') ? '' : local) + logoDetail.explain
     return result
   }, [])
