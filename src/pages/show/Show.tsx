@@ -1,9 +1,10 @@
 import '@arco-design/web-react/dist/css/arco.css'
-import { useContext, useMemo, useRef } from 'react'
+import { useContext, useEffect, useMemo, useRef } from 'react'
 import { logoLevelItems } from '../../constants/logo'
 import { background } from '../../res/img/background'
 import { AppContext, ShowItem } from '../../stores/useAppContext'
 import { HeroCard } from './components/HeroCard'
+import { Message } from '@arco-design/web-react'
 
 export const Show = () => {
   const { showItems } = useContext(AppContext)
@@ -26,7 +27,13 @@ export const Show = () => {
     return result
   }, [showItems])
 
-  function enterFullscreen(element: any) {
+  useEffect(() => {
+    Message.info('请打开手机的旋转方向并横置手机来获得最佳效果')
+    enterFullscreen()
+  }, [])
+
+  function enterFullscreen() {
+    const element = document.documentElement as any
     if (element.requestFullscreen) {
       element.requestFullscreen()
     } else if (element.mozRequestFullScreen) {
@@ -41,12 +48,7 @@ export const Show = () => {
     }
   }
   return (
-    <div
-      className="h-full px-[100px] pt-[80px]"
-      onClick={() => {
-        enterFullscreen(document.documentElement)
-      }}
-    >
+    <div className="h-full px-[100px] pt-[80px]">
       <img src={background} className="absolute top-0 bottom-0 left-0 right-0 z-[-1]" />
       <div
         className="flex items-center space-x-[20px] overflow-x-auto"
