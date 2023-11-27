@@ -1,22 +1,29 @@
 import { Button, Input, Modal, Select, Table } from '@arco-design/web-react'
-import { useContext, useMemo, useState } from 'react'
+import { useContext, useEffect, useMemo, useState } from 'react'
 import { logoLevelItems } from '../../constants/logo'
 import { ALL_HERO_LIST } from '../../constants/show'
 import { ColumnProps } from '@arco-design/web-react/es/Table'
 import { AppContext } from '../../stores/useAppContext'
 import { useNavigate } from 'react-router-dom'
 
+const DEFAULT_LOCAL = {
+  province: '广东',
+  municipal: '深圳',
+  district: '南山'
+}
 export const Edit = () => {
   const { setShowItems } = useContext(AppContext)
   const navigate = useNavigate()
   const [visible, setVisible] = useState(false)
-  const [local, setLocal] = useState(
-    JSON.parse(localStorage.getItem('local')!) || {
-      province: '广东',
-      municipal: '深圳',
-      district: '南山'
+  const [local, setLocal] = useState(DEFAULT_LOCAL)
+  useEffect(() => {
+    const store = localStorage.getItem('local')
+    if (!store) {
+      localStorage.setItem('local', JSON.stringify(DEFAULT_LOCAL))
+    } else {
+      setLocal(JSON.parse(store))
     }
-  )
+  }, [])
 
   const data = useMemo(
     () =>
