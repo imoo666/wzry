@@ -30,6 +30,7 @@ export const Show = () => {
   useEffect(() => {
     Message.info('请打开手机的旋转方向并横置手机来获得最佳效果')
     enterFullscreen()
+    window.scrollTo(0, document.body.scrollHeight)
   }, [])
 
   function enterFullscreen() {
