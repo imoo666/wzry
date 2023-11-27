@@ -30,7 +30,7 @@ export const Edit = () => {
   )
 
   const [tabelValue, setTableValue] = useState(data)
-  const [query, setQuery] = useState('')
+  // const [query, setQuery] = useState('')
   const columns: ColumnProps[] = [
     { title: '英雄', width: 200, dataIndex: 'name' },
     {
@@ -70,13 +70,6 @@ export const Edit = () => {
   return (
     <div className="mx-[10px]">
       <div className="my-[10px] flex justify-between">
-        {/* <Input.Search
-          className="w-[200px]"
-          placeholder="搜索英雄"
-          onChange={(value) => {
-            setQuery(value)
-          }}
-        /> */}
         <div className="space-x-2">
           <Button type="primary" onClick={() => setVisible(true)}>
             设置
@@ -86,12 +79,7 @@ export const Edit = () => {
           </Button>
         </div>
       </div>
-      <Table
-        rowKey="id"
-        columns={columns}
-        data={tabelValue.filter((item) => item.name.includes(query))}
-        pagination={false}
-      />
+      <Table rowKey="id" columns={columns} data={tabelValue} pagination={false} />
 
       <Modal title="设置" visible={visible} onOk={setInfo} onCancel={() => setVisible(false)}>
         <Input
