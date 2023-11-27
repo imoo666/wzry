@@ -1,4 +1,4 @@
-import { Button, Input, Modal, Select, Table } from '@arco-design/web-react'
+import { Button, Input, Message, Modal, Select, Table } from '@arco-design/web-react'
 import { useContext, useEffect, useMemo, useState } from 'react'
 import { logoLevelItems } from '../../constants/logo'
 import { ALL_HERO_LIST } from '../../constants/show'
@@ -73,14 +73,34 @@ export const Edit = () => {
     localStorage.setItem('local', JSON.stringify(local))
     setVisible(false)
   }
+  const getPublish = () => {
+    Modal.info({
+      title: '公告',
+      content: (
+        <div>
+          <div className="font-bold my-2">使用须知</div>
+          <div>1. 推荐使用 via 浏览器，目前已知微信浏览器会出现横屏异常</div>
+          <div>2. 需要手机打开横屏模式</div>
+          <div>3. github 链接 https://github.com/imoo666/wzry</div>
+          <div className="font-bold my-2">更新日志</div>
+          <div>1127：完成整体开发部署，power by dddv</div>
+        </div>
+      )
+    })
+  }
 
   return (
     <div className="mx-[10px]">
       <div className="my-[10px] flex justify-between">
         <div className="space-x-2">
+          <Button type="primary" onClick={getPublish}>
+            公告
+          </Button>
           <Button type="primary" onClick={() => setVisible(true)}>
             设置
           </Button>
+        </div>
+        <div className="space-x-2">
           <Button status="success" onClick={getInfo}>
             生成
           </Button>
