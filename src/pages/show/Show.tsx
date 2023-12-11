@@ -68,8 +68,8 @@ export const Show = () => {
           .map(([key, value]) => (
             <div className="flex font-[fzz] items-center text-[13px]" key={key}>
               <div className="text-[#f9feff]">{key}</div>
-              <div className="text-[#cdb764] ml-[4px]">
-                <span className="font-[number] font-bold mr-[2px]">{value}</span>
+              <div className="text-[#cdb764]">
+                <span className="font-[number] mr-[2px] ml-[6px]">{value}</span>
                 <span>个</span>
               </div>
             </div>
