@@ -66,10 +66,10 @@ export const Show = () => {
         {Object.entries(levelText.current)
           .filter(([_, value]) => value > 0)
           .map(([key, value]) => (
-            <div className="flex font-[fzz]" key={key}>
-              <div className="text-[#f9feff] text-[13px]">{key}</div>
-              <div className="text-[#cdb764] text-[13px] ml-[4px]">
-                <span className="text-[12px] font-[number] font-bold mr-[2px]">{value}</span>
+            <div className="flex font-[fzz] items-center text-[13px]" key={key}>
+              <div className="text-[#f9feff]">{key}</div>
+              <div className="text-[#cdb764] ml-[4px]">
+                <span className="font-[number] font-bold mr-[2px]">{value}</span>
                 <span>个</span>
               </div>
             </div>
