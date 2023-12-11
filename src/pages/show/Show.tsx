@@ -1,10 +1,10 @@
+import { Message } from '@arco-design/web-react'
 import '@arco-design/web-react/dist/css/arco.css'
 import { useContext, useEffect, useMemo, useRef } from 'react'
 import { logoLevelItems } from '../../constants/logo'
 import { background } from '../../res/img/background'
 import { AppContext, ShowItem } from '../../stores/useAppContext'
 import { HeroCard } from './components/HeroCard'
-import { Message } from '@arco-design/web-react'
 
 export const Show = () => {
   const { showItems } = useContext(AppContext)
@@ -66,10 +66,10 @@ export const Show = () => {
         {Object.entries(levelText.current)
           .filter(([_, value]) => value > 0)
           .map(([key, value]) => (
-            <div className="flex" key={key}>
-              <div className="text-[#c5ced4] text-[13px]">{key}</div>
-              <div className="text-[#cdb764] text-[13px] ml-[8px]">
-                <span className="text-[12px]">{value}</span>
+            <div className="flex font-[fzz]" key={key}>
+              <div className="text-[#f9feff] text-[13px]">{key}</div>
+              <div className="text-[#cdb764] text-[13px] ml-[4px]">
+                <span className="text-[12px] font-[number] font-bold mr-[2px]">{value}</span>
                 <span>个</span>
               </div>
             </div>
